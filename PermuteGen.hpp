@@ -22,7 +22,6 @@
 class PermuteGen
 {
     std::vector<int> numList;
-    bool first;
     bool done;
 
 public:
@@ -38,7 +37,6 @@ public:
         for (int i = 0; i < size; i++)
             numList.push_back(i);
 
-        first = true;
         done = false;
     }
 
@@ -66,9 +64,6 @@ public:
 
 
 };
-
-
-
 
 
 #endif //PERMUTATIONGENERATOR_PERMUTEGEN_HPP

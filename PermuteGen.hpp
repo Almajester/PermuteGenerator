@@ -53,9 +53,6 @@ public:
     }
 
     void next() {
-        // first == true means do nothing, just return
-        //   we could eliminate this test if we use pointer to function for next()
-        //   and reassign to one that does just the permutes, but who cares?
         if (!done) {
             done = !std::next_permutation(numList.begin(), numList.end());
             return;
